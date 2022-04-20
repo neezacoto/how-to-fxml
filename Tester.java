@@ -10,11 +10,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.WindowEvent;
 
+/**
+ * This class is responsible for starting our application
+ */
 public class Tester extends Application {
 
+	//Just like how we start a regular fx application
  	@Override
 	public void start(Stage stage) {
 		try {
+		//starts our UI
 		Parent root = FXMLLoader.load(getClass().getResource("GreetingsUI.fxml"));
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
@@ -36,6 +41,5 @@ public class Tester extends Application {
  
 	public static void main(String[] args) {
 		launch(args);
-		
 	}
 }
