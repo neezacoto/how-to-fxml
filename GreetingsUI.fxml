@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane fx:id="appContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <bottom>
+      <BorderPane prefHeight="64.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="600.0" spacing="50.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="helloButton" mnemonicParsing="false" onAction="#sayHello" text="Hello" />
+                  <Button fx:id="hiButton" mnemonicParsing="false" onAction="#sayHi" text="Hi" />
+                  <Button fx:id="howdyButton" mnemonicParsing="false" onAction="#sayHowdy" text="Howdy" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>
